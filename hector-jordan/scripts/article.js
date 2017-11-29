@@ -3,16 +3,22 @@
 let articles = [];
 
 // COMMENT: What is the purpose of the following function? Why is its name capitalized? Explain the context of "this" within the function. What does "rawDataObj" represent?
-// PUT YOUR RESPONSE HERE
+// Article is a constructor (which is why its capitalized) to create articles and it takes in articles using rawDataObj which is an object literal holding all the info of the articles. We can access the data using something like: this.body which would point to body of the selected article.
 
 function Article (rawDataObj) {
-  // TODO: Use the JS object that is passed in to complete this constructor function:
+  // DONE: Use the JS object that is passed in to complete this constructor function:
   // Save ALL the properties of `rawDataObj` into `this`
+  this.title = rawDataObj.title;
+  this.category = rawDataObj.category;
+  this.author = rawDataObj.author;
+  this.authorUrl = rawDataObj.authorUrl;
+  this.publishedOn = rawDataObj.publishedOn;
+  this.body = rawDataObj.body;
 }
 
 Article.prototype.toHtml = function() {
   // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
-  // PUT YOUR RESPONSE HERE
+  // If we use clone we dont have to make the template all the time.
 
   let $newArticle = $('article.template').clone();
   /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
