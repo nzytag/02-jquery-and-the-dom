@@ -1,6 +1,6 @@
 # Project Name
 
-**Author**: Hector Norza
+**Author**: Jordan Van Ness
 **Version**: 1.1.0
 
 ## Overview
@@ -21,5 +21,5 @@ We used CSS to hide elements, we used HTML to publish articles, we linked JS wit
 12am complete project---Now its fully functional
 
 ## Credits and Collaborations
-Jordan Van Ness was a driver/navigator for parts of this project.
+Hector Norza was a driver/navigator for parts of this project.
 -->
